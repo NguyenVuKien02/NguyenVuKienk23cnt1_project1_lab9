@@ -18,9 +18,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
                 <form action="{{route('sinhvien.editSubmit')}}" method="POST">
                     @csrf
                     <div class="input-group input-group-sm mb-3">
-                        <span class="input-group-text" id="nvkMaMH">Mã sinh vien</span>
-                        <input type="text" class="form-control" aria-describedby="nvkMaMH"
-                            name="nvkMaMH" value="{{$sinhvien->MaSV}}" readonly>
+                        <span class="input-group-text" id="MaSV">Mã sinh vien</span>
+                        <input type="text" class="form-control" aria-describedby="MaSV"
+                            name="MaSV" value="{{$sinhvien->MaSV}}" readonly>
                     </div>
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="HoSV">Họ sinh viên</span>

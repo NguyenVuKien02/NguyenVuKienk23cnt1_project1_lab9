@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 #SinhVien - Model
 Route::get('/sinhvien',[SinhVienController::class,'index'])->name('sinhvien.index');
-Route::get('/sinhvien/detail/{mamsv}',[SinhVienController::class,'getsinhvienById'])->name('sinhvien.detail');
+Route::get('/sinhvien/detail/{masv}',[SinhVienController::class,'getsinhvienById'])->name('sinhvien.detail');
 # thêm mới
 Route::get('/sinhvien/create',[SinhVienController::class,'create'])->name('sinhvien.create');
 Route::post('/sinhvien/create',[SinhVienController::class,'createSubmit'])->name('sinhvien.createSubmit');
