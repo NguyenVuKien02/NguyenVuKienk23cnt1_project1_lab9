@@ -40,7 +40,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="NgaySinh">Ngày sinh</span>
                         <input type="date" class="form-control" aria-describedby="NgaySinh"
-                                    name="NgaySinh" value="{{$sinhvien->NgaySinh}}">
+                                    name="NgaySinh" value="{{\Carbon\Carbon::parse($sinhvien->NgaySinh)->format('Y-m-d') }}">
                     </div>
                     <div class="input-group input-group-sm mb-3">
                         <span class="input-group-text" id="NoiSinh">Nơi sinh</span>
